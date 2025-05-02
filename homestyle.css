@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'CocogooseProTrial Regular';
+    src: url('Cocogoose-Pro-Regular-trial.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'CocogooseProTrial Regular', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+h1, p {
+    font-family: 'Cute Cat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #D6C3D7;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(105, 105, 105, 0.6);
+    z-index: 1000;
+}
+
+.navlogo-img {
+    height: 60px;
+    margin-left: 10px;
+    width: auto;
+}
+
+.navtop {
+    margin-right: 30px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navtop li {
+    list-style: none;
+}
+
+.navtop a {
+    text-decoration: none;
+    color: #743D89;
+    transition: color 0.3s ease;
+}
+
+.navtop a:hover {
+    color: #000;
+}
+
+.homebanner {
+    width: 100%;
+    aspect-ratio: 1920 / 829;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+  
+.homebanner-slideshow {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+  
+.homebanner-slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+  
+.homebanner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-slide {
+    width: 100%;
+}
+
+.homebanner-dots {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.homebanner-dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.homebanner-dots .dot.active {
+    background-color: #743D89;
+}
+
+.homebanner-dots .dot:hover {
+    background-color: #AD7FB9;
+}  
+
+.divider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+  
+.divider-img {
+    display: block;
+    width: 20%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.thumb-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 3px auto;
+    padding: 7px;
+}
+
+.thumb {
+    text-align: center;
+    width: 100%;
+}
+
+.thumb-img {
+    width: 280px;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.thumb-img:hover {
+    filter: grayscale(100%) brightness(0.85) saturate(1.5) contrast(1.5);
+}
+
+.swap-img:hover {
+    content: url('icon/thumbnail_sephiroth_hover.png');
+    filter: grayscale(0%) brightness(1.0) saturate(1.0) contrast(1.0);
+}
+  
