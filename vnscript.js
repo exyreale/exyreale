@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function exitGame() {
         stopMenuMusic();
-        window.location.href = "index.html";
+        window.location.href = 'index.html';
     }
     
     window.startGame = startGame;
