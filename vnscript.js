@@ -535,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     home.addEventListener('click', () => {
-        window.location.href = 'home.html';
+        window.location.href = 'index.html';
     });
 
     // start game and exit game
@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function exitGame() {
         stopMenuMusic();
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
     
     window.startGame = startGame;
